@@ -29,3 +29,29 @@
    ```bash
    git clone https://github.com/seu-usuario/chatPG.git
    cd chatPG
+
+2. Crie e ative um ambiente virtual:
+
+   ```sh
+   python -m venv .venv
+   source .venv/bin/activate   # No Windows, use `.venv\Scripts\activate`
+
+3. Instale as dependências:
+
+   ```sh
+   pip install -r requirements.txt
+
+4. Aplique as migrações:
+
+   ```sh
+   python manage.py migrate
+
+5. Crie um superusuário para acessar o painel de administração:
+
+   ```sh
+   python manage.py createsuperuser
+
+6. Execute o servidor de desenvolvimento:
+
+   ```sh
+   python manage.py runserver
